@@ -1,0 +1,14 @@
+{
+  "name": "test-repo-1",
+  "version": "1.0.0",
+  "description": "A small app that depends on test-repo-2.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "test-repo-2": "git+https://github.com/RaehyungLee/test-repo-2.git",
+    "lodash": "4.17.4"
+  },
+  "license": "MIT"
+}
