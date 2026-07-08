@@ -6,5 +6,9 @@ const numbers = [1, 2, 3, 4];
 const total = _.reduce(numbers, (acc, n) => add(acc, n), 0);
 const product = _.reduce(numbers, (acc, n) => multiply(acc, n), 1);
 
+const cube = (n) => multiply(multiply(n, n), n);
+const cubes = _.map(numbers, cube);
+
 console.log("sum:", total);
 console.log("product:", product);
+console.log("cubes:", cubes);
