@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "test-repo-2": "git+https://github.com/RaehyungLee/test-repo-2.git",
-    "lodash": "4.17.4"
+    "lodash": "4.17.21"
   },
   "license": "MIT"
 }
