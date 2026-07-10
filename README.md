@@ -1,15 +1,15 @@
 # test-repo-1
 
-A small demo app that depends on `test-repo-2` (a cross-repo dependency).
+A small demo app written in Python. It computes the sum and product of a list
+of numbers using its own local `add`/`multiply` helpers.
 
 ## Dependencies
 
-- `test-repo-2` — sibling repo, pulled in via git.
-- `lodash` — pinned to an old version on purpose (dependency scanner test).
+- None. The `add` and `multiply` helpers are defined locally (no external or
+  cross-repo dependencies).
 
 ## Run
 
 ```bash
-npm install
-npm start
+python main.py
 ```
