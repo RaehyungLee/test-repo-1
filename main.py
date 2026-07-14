@@ -11,7 +11,10 @@ def multiply(a, b):
 
 numbers = [1, 2, 3, 4, 5]
 
-total = reduce(add, numbers, 0)
+total = 0
+for i in numbers:
+    total += i
+
 product = reduce(multiply, numbers, 1)
 
 
