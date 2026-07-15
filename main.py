@@ -9,7 +9,7 @@ def multiply(a, b):
     return a * b
 
 
-numbers = [1, 2, 3, 4, 5]
+numbers = [1, 8, 27, 64, 125]
 
 total = reduce(add, numbers, 0)
 product = reduce(multiply, numbers, 1)
