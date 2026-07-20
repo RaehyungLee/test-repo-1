@@ -1,0 +1,18 @@
+# LiteLLM proxy config. Bumped together with the image tag via build.sh.
+# Keep the native bedrock/* models and cloud-ops
+# workloads:ai_gateway_bedrock_model_arns in Pulumi.{env}.yaml in lockstep.
+model_list:
+  - model_name: claude-opus-4-8-bedrock
+    litellm_params:
+      model: bedrock/us.anthropic.claude-opus-4-8
+      aws_region_name: us-east-1
+  - model_name: claude-sonnet-4-6-bedrock
+    litellm_params:
+      model: bedrock/us.anthropic.claude-sonnet-4-6
+      aws_region_name: us-east-1
+  # NEW: claude-fable-5 Bedrock twin. Its inference-profile ARN must be added to
+  # cloud-ops workloads:ai_gateway_bedrock_model_arns in the same rollout.
+  - model_name: claude-fable-5-bedrock
+    litellm_params:
+      model: bedrock/us.anthropic.claude-fable-5
+      aws_region_name: us-east-1
