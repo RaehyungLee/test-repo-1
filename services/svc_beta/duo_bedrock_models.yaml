@@ -2,4 +2,3 @@
 # workloads:ai_gateway_bedrock_model_arns in Pulumi.duo.yaml.
 models:
   - bedrock/us.anthropic.claude-opus-4-8
-  - bedrock/us.anthropic.claude-duo-8
