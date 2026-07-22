@@ -7,3 +7,5 @@ product = math.prod(numbers)
 
 print("sum:", total)
 print("product:", product)
+
+# re-scan trigger
