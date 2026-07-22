@@ -10,9 +10,3 @@ model_list:
     litellm_params:
       model: bedrock/us.anthropic.claude-sonnet-4-6
       aws_region_name: us-east-1
-  # NEW: claude-fable-5 Bedrock twin. Its inference-profile ARN must be added to
-  # cloud-ops workloads:ai_gateway_bedrock_model_arns in the same rollout.
-  - model_name: claude-fable-5-bedrock
-    litellm_params:
-      model: bedrock/us.anthropic.claude-fable-5
-      aws_region_name: us-east-1
