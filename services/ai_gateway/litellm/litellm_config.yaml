@@ -15,3 +15,5 @@ model_list:
     litellm_params:
       model: bedrock/us.anthropic.claude-fable-6
       aws_region_name: us-east-1
+
+# rescan trigger (keeps the fable-6 alias)
