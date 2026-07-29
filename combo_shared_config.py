@@ -1,5 +1,8 @@
-"""Shared aggregation helper (trigger PR variant)."""
+"""Shared aggregation helper (partner PR variant)."""
 
 
 def combine(values):
-    return sum(values)
+    total = 0
+    for value in values:
+        total += value
+    return total
