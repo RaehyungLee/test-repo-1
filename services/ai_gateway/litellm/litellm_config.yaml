@@ -1,0 +1,17 @@
+# LiteLLM proxy config. The new fable-6 Bedrock twin's inference-profile ARN must
+# be authorized in BOTH cloud-ops (Pulumi allowlist) AND the inference-router
+# allowed_models list — a single change coupled to two downstream repos.
+model_list:
+  - model_name: claude-opus-4-8-bedrock
+    litellm_params:
+      model: bedrock/us.anthropic.claude-opus-4-8
+      aws_region_name: us-east-1
+  - model_name: claude-sonnet-4-6-bedrock
+    litellm_params:
+      model: bedrock/us.anthropic.claude-sonnet-4-6
+      aws_region_name: us-east-1
+  # NEW: claude-fable-6 twin. Not yet authorized in cloud-ops or inference-router.
+  - model_name: claude-fable-6-bedrock
+    litellm_params:
+      model: bedrock/us.anthropic.claude-fable-6
+      aws_region_name: us-east-1
