@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package orders.v1;
+
+// Order is code-generated into gen/orders/v1/orders_pb2.py via `make proto`.
+// Editing this file requires regenerating and committing that twin in the SAME
+// PR, otherwise the generated client drifts from the contract.
+message Order {
+  string order_id = 1;
+  string customer_id = 2;
+  // NEW field — the generated orders_pb2.py must be regenerated to match.
+  string cancel_reason = 3;
+}
