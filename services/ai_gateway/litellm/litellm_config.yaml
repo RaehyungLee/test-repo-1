@@ -1,0 +1,16 @@
+# LiteLLM proxy config. Keep bedrock/* twins and cloud-ops
+# workloads:ai_gateway_bedrock_model_arns (Pulumi.{env}.yaml) in lockstep.
+model_list:
+  - model_name: claude-opus-4-8-bedrock
+    litellm_params:
+      model: bedrock/us.anthropic.claude-opus-4-8
+      aws_region_name: us-east-1
+  - model_name: claude-sonnet-4-6-bedrock
+    litellm_params:
+      model: bedrock/us.anthropic.claude-sonnet-4-6
+      aws_region_name: us-east-1
+  # NEW: claude-combo-7 Bedrock twin — its ARN is NOT yet authorized in cloud-ops.
+  - model_name: claude-combo-7-bedrock
+    litellm_params:
+      model: bedrock/us.anthropic.claude-combo-7
+      aws_region_name: us-east-1
