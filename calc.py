@@ -1,12 +1,18 @@
-import math
+from functools import reduce
 
 numbers = [1, 2, 3, 4]
 
-# Aggregate with Python built-ins instead of a helper library.
-total = sum(numbers)
-product = math.prod(numbers)
 
-print("sum:", total)
-print("product:", product)
+def aggregate(values):
+    return {
+        "total": reduce(lambda acc, n: acc + n, values, 0),
+        "product": reduce(lambda acc, n: acc * n, values, 1),
+        "max": max(values),
+    }
 
-# re-scan trigger
+
+stats = aggregate(numbers)
+
+print("sum:", stats["total"])
+print("product:", stats["product"])
+print("max:", stats["max"])
