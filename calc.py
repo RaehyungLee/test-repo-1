@@ -16,3 +16,5 @@ stats = aggregate(numbers)
 print("sum:", stats["total"])
 print("product:", stats["product"])
 print("max:", stats["max"])
+
+# re-scan trigger
