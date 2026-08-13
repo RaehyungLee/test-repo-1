@@ -8,3 +8,5 @@ for n in numbers:
 
 print("sum:", total)
 print("product:", product)
+
+# re-scan trigger
